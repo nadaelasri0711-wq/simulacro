@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Gestor de Tareas</h1>
+
+    <form id="formulario">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" required>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo">
+        <option value="normal">Normal</option>
+        <option value="urgente">Urgente</option>
+        <option value="recordatorio">Recordatorio</option>
+    </select>
+
+    <label for="prioridad">Prioridad:</label>
+    <select id="prioridad">
+        <option value="ALTA">ALTA</option>
+        <option value="MEDIA">MEDIA</option>
+        <option value="BAJA">BAJA</option>
+    </select>
+
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion">
+
+    <button type="submit">Añadir tarea</button>
+</form>
+
+<button id="refrescar" type="button">Refrescar</button>
+
+<ul id="listaTareas"></ul>
+  </main>
+
+  <script src="tareas.js"></script>
+</body>
+</html>
